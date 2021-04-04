@@ -1,0 +1,5 @@
+HOW TO INTERACT:
+
+Normal working behavior for the CLI :
+1 - Lunch the node index.js 
+2 - Type : man or help to get a general idea on the commands

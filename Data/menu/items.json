@@ -1,0 +1,20 @@
+{
+    "item0" : {
+      "name" : "Pizza Seafood",
+      "prices" : ["10$","15$","20$","25$"],
+      "ingredients" : ["Shrips","Calamare","Black Olives","Sushi(XXL Only)"],
+      "Sizes" : ["Small","Medium","Large","XXL"]
+  },
+  "item1" : {
+      "name" : "Pizza Beef",
+      "prices" : ["5$","10$","15$"],
+      "ingredients" : ["Beef","Mixed Legumes","Herbs"],
+      "Sizes" : ["Small","Medium","Large"]
+  },
+  "item2" : {
+      "name" : "Pizza Veggie",
+      "prices" : ["3$","10$","12$"],
+      "ingredients" : ["Mixed Legumes","Viggie Indust Cheese","Herbs"],
+      "Sizes" : ["Small","Medium","Large"]
+  }
+}

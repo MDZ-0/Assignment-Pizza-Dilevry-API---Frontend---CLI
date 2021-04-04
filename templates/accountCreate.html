@@ -1,0 +1,27 @@
+<h1>Create your account</h1>
+<h2>Only few steps left ...</h2>
+
+<div class="formwrapper">
+  <form id="accountCreate" action="/api/users" method="POST">
+    <div class="formError"></div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Full Name:</div>
+      <input type="text" name="fullName" placeholder="Your full name ..." />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Email:</div>
+      <input type="text" name="email" placeholder="email@domail.com" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Address:</div>
+      <input type="text" name="address" placeholder="Where you live or near it!" />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Password:</div>
+      <input type="password" name="password" placeholder="Hardest part, try your best ..." />
+    </div>
+    <div class="inputWrapper ctawrapper">
+      <button type="submit" class="cta blue">Let's GO!</button>
+    </div>
+  </form>
+</div>

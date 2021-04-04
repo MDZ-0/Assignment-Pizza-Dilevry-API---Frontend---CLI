@@ -1,0 +1,104 @@
+<h1>Place an order</h1>
+<h2>Your order will be based on the below menu, enjoy your stay!</h2>
+<a class="backButton" href="/">Back</a>
+<hr />
+
+<div class="formWrapper">
+  <div class="container" id="menu">
+    <div class="group-header">
+        <span>Small</span><span class="price">$10.00</span></br>
+      <span>Medium</span><span class="price">$15.00 </span></br>
+      <span>Large</span><span class="price">$20.00</span></br>
+      <span>XXL</span><span class="price">$25.00</span></br>
+    </div>
+
+    <h3>
+      <span>Pizza Seafood</span>
+    </h3>
+    <p class="flavor">&nbsp;Fresh delicious served pizza that inspire the wisdom of the sea</p>
+    <p class="ingredients">&nbsp;Shrips, Calamare, Black Olives, Sushi(XXL Only)</p>
+    <br/>
+  <hr />
+      <div class="group-header">
+        <span>Small</span><span class="price">$5.00</span>
+        </br>
+        <span>Medium</span><span class="price">$10.00 </span></br>
+        <span>Large</span><span class="price">$15.00</span></br>
+      </div>
+      <h3>
+        <span>Pizza Beef</span>
+      </h3>
+      <p class="flavor"> &nbsp;Fresh yet natural mix of herbs and taste of the wild that unleash your inner beast</p>
+      <p class="ingredients">&nbsp;Beef, Mixed Legumes, Herbs</p>
+      <br/>
+      <hr />
+      <div class="group-header">
+        <span>Small</span><span class="price">$3.00</span> </br>
+        <span>Medium</span><span class="price">$10.00 </span></br>
+        <span>Large</span><span class="price">$12.00</span></br>
+      </div>
+
+      <h3>
+        <span>Pizza Veggie</span>
+      </h3>
+      <p class="flavor"> &nbsp;A delicasy of freshness that inspire the saint in you</p>
+      <p class="ingredients">&nbsp;Mixed Legumes, Veggie Home Made Cheese, Herbs</p>
+  </div>
+</div>
+
+
+
+<div class="formWrapper">
+  <div class="formWrapper">
+    <form id="orderCreate" action="/api/cart" method="POST">
+      <div class="inputWrapper">
+        <div class="inputLabel">Item:</div>
+        <select name="orderName" class="orderName">
+          <option value="Pizza Seafood" selected>Pizza Seafood</option>
+          <option value="Pizza Beef">Pizza Beef</option>
+          <option value="Pizza Veggie">Pizza Veggie</option>
+        </select>
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Size:</div>
+        <select name="itemSize" class="itemSize">
+          <option value="Small" selected>Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <div class="inputWrapper">
+        <div class="inputLabel">Number of items:</div>
+        <input type="number" class="orderNbrItems" name="nbrItems" min="1" value="1" />
+        <div class="formError"></div>
+      </div>
+
+      <div class="inputWrapper ctaWrapper">
+        <button type="button" class="cta blue" onclick="app.cart.addOrder()">Place an order</button>
+      </div>
+    </div>
+
+      <div class="cart">
+        Cart :
+        <div id="cartList">
+        </div>
+        <div class="formError"></div>
+      </div>
+
+      <div class="inputWrapper">
+        <div class="inputLabel">Total of your order in $:</div>
+        <input id="itemId" type="number" name="itemId" class="itemId" hidden value="0" />
+        <input id="totalSum" type="number" step="0.01" class="totalSum" value="0" disabled />
+      </div>
+
+      <div class="inputWrapper ctaWrapper">
+        <button type="submit" class="cta green">Validate Total Amount order</button>
+      </div>
+  </form>
+  <div class="inputWrapper warning">
+    Card information used : Fake </br>
+    payment_method : <b>'pm_card_visa'</b> </br>
+    We validate intention of payment and card information simultaneously !
+  </div>
+</div>

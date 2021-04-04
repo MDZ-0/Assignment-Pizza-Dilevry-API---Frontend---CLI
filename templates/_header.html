@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <!-- General Settings -->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en-US">
+    <base href="{global.baseUrl}" />
+
+    <!-- Meta TAGS -->
+    <title> {head.title} | {global.appName} </title>
+    <meta name="description" content="{head.description}">
+
+    <!-- Statis assets -->
+    <!--
+    <a href='https://pngtree.com/so/pizza-clipart'>pizza clipart png from pngtree.com</a>
+    -->
+    <link type="image/x-icon" rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="public/app.css" />
+    <script type="text/javascript" charset="UTF-8" src="public/app.js"></script>
+
+  </head>
+  <body class="{body.class}">
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+
+    <div class="header">
+    <!-- Header -->
+      <a class="logo" href="/"><img src="public/icon.png" alt="Pizza"></a>
+
+      <!-- Navigation bar -->
+      <ul class="menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li class="loggedOut">
+          <a  href="/account/create">Signup</a>
+        </li>
+        <li class="loggedOut">
+          <a href="/session/create">Login</a>
+        </li>
+        <li class="loggedIn">
+          <a  href="/order/create">Menu & Orders</a>
+        </li>
+        <li class="loggedIn">
+          <a  href="/account/edit">Account Settings</a>
+        </li>
+        <li class="loggedIn">
+          <a  id="logoutButton" href="/">Logout</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Page specific content -->
+    <div class="content">
